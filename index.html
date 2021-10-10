@@ -4,39 +4,138 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link family="Roboto:wght@400;700&amp;display=swap&quot;" rel="stylesheet">
     <title>Online Cinema</title>
 </head>
 <body>
-    <header class="header container">
-        <a href="#"><img src="/img/logo.png" alt="Cinema logo" ></a>
-        <nav class="nav">
-            <ul class="menu">
-                <li class="menu__item">
-                    <a href="#" class="menu__link">Главная</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link">Фильмы</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link">Кинотеатры</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link">События</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link">Поддержка</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="user">
-            <span class="">Привет, Мила</span>
-            <img src="/img/Rectangle 1.png" alt="user photo" class="avatar">
+    <header class="header ">
+        <div class="navbar container">
+            <a href="#"><img src="/img/logo.png" alt="Cinema logo" ></a>
+            <nav class="nav">
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Главная</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Фильмы</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Кинотеатры</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">События</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Поддержка</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="user">
+                <span class="">Привет, Мила</span>
+                <img src="../img/Rectangle 1.png" alt="user photo" class="avatar">
+            </div>
         </div>
+        <div class="film container">
+            <div class="film__info">
+                <small class="film__title__small">Avengers: Infinity War</small>
+                <h1 class="film__title">Мстители: война бесконечности</h1>
+                <p class="film__description">Пока Мстители и их союзники продолжают защищать мир от различных опасностей, с которыми не смог бы справиться один супергерой, новая угроза возникает из космоса: Танос. Межгалактический тиран преследует цель собрать все шесть Камней Бесконечности - артефакты невероятной силы, с помощью которых можно менять реальность по своему желанию. Всё, с чем Мстители сталкивались ранее, вело к этому моменту – судьба Земли никогда ещё не была столь неопределённой.</p>
+                <div class="film__details">
+                    <div class="time">
+                        <img src="../img/clock 1.svg" alt="clock" class="time__icon">
+                        <span class="time__counter">
+                            240 м.
+                        </span>
+                    </div>
+                    <div class="raiting">
+                        <img src="../img/imdb.png" alt="imdb raiting" class="raiting__icon">
+                        <span class="raiting__counter">
+                            <strong class="raiting__current">9.2</strong> / 10
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- /.film__details -->
+            <!-- /.film__info -->
+            <a href="#" class="film__trailer">
+                <svg width="108" height="108" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d)">
+                    <circle cx="54" cy="50" r="50" fill="white"/>
+                    <g clip-path="url(#clip0)">
+                    <path d="M47.0758 30.0033C43.3071 27.8416 40.2518 29.6125 40.2518 33.9556V66.0059C40.2518 70.3533 43.3071 72.1219 47.0758 69.9623L75.0893 53.8967C78.8592 51.7342 78.8592 48.2306 75.0893 46.0686L47.0758 30.0033Z" fill="#F20D01"/>
+                    </g>
+                    </g>
+                    <defs>
+                    <filter id="filter0_d" x="0" y="0" width="108" height="108" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="4"/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                    </filter>
+                    <clipPath id="clip0">
+                    <rect width="41.8013" height="41.8013" fill="white" transform="translate(38.1837 29.0816)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>          
+            </a>
+        </div>
+        <div class="session container">
+            <div class="session__date">
+                <span class="session__label">Дата</span>
+                <div class="session__date__block">
+                    <div class="session__date__item">
+                        <span class="session__month">АПР</span>
+                        <span class="session__day">27</span>
+                        <span class="session__week">ПТ</span>
+                    </div>
+                    <div class="session__date__item">
+                        <span class="session__month">АПР</span>
+                        <span class="session__day">28</span>
+                        <span class="session__week">СБ</span>
+                    </div>
+                    <div class="session__date__item">
+                        <span class="session__month">АПР</span>
+                        <span class="session__day">29</span>
+                        <span class="session__week">ВС</span>
+                    </div>
+                    <div class="session__date__item">
+                        <span class="session__month">АПР</span>
+                        <span class="session__day">30</span>
+                        <span class="session__week">ПН</span>
+                    </div>
+                </div>
+            </div>
+            <!-- /.date -->
+            <div class="session__cinema">
+                <span class="session__label">Кинотеатр</span>
+                <select class="select select__cinema" name="cinema" >
+                    <option value="1">Октябрь, ул. Калужская 28</option>
+                    <option value="2">Мир, пр. Ленина 178</option>
+                </select>
+            </div>
+            <!-- /.cinema -->
+            <div class="session__time">
+                <span class="session__label">Время</span>
+                <select class="select" name="time">
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                </select>
+            </div>
+            <!-- /.session__time -->
+        </div>
+        <!-- /.session -->
     </header>
 </body>
 </html>
